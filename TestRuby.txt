@@ -1,0 +1,29 @@
+1.1 US_states.each do |key,value|
+if US_states[key][1]=="T" ||  US_states[key][1]=="N"
+puts US_states[key]
+end
+end
+
+
+1.2 puts US_states.values.sort.reverse
+
+
+1.3 US_states.each do |key,value|
+    if US_states.keys[0]=='a'
+    puts US_states.keys[0]
+    end
+    end
+
+
+
+2. 	require 'prime'
+	def prime_hash (k)
+    	Prime.each(k) do |prime|
+        p prime 
+	end
+	end
+	prime_hash(20)
+
+
+		       
+
