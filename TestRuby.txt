@@ -62,11 +62,16 @@ end
 1.2 puts US_states.values.sort.reverse
 
 
-1.3 US_states.each do |key,value|
-    if US_states.keys[0]=='a'
-    puts US_states.keys[0]
-    end
-    end
+1.3 US_states2.each do |k,v|
+	    text_rut = "#{k}".upcase
+	    if(text_rut[0]=="A"||text_rut[0]=="E"||text_rut[0]=="I"||text_rut[0]=="O"||text_rut[0]=="U")
+	        num = text_rut.length-1
+	        text = text_rut[num]
+	        if(text=="A"||text=="E"||text=="I"||text=="O"||text=="U")
+	            puts "#{k}"
+	        end
+	    end
+	 end
 
 
 
